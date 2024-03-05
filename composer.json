@@ -1,0 +1,22 @@
+{
+    "name": "verifiedit/laravel-sqlsrv-driver-enhanced",
+    "description": "Enhanced version of Laravel's database driver for Sql Server.",
+    "type": "library",
+    "require": {
+        "illuminate/database": "^10.0",
+        "illuminate/support": "^10.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Verifiedit\\LaravelSqlServerDriverEnhanced\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Verifiedit\\LaravelSqlServerDriverEnhanced\\ServiceProvider"
+            ]
+        }
+    }
+}
