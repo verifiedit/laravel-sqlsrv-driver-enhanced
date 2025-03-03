@@ -9,9 +9,7 @@ class SqlServerConnection extends \Illuminate\Database\SqlServerConnection
 {
     protected function getDefaultQueryGrammar()
     {
-        ($grammar = new QueryGrammar)->setConnection($this);
-
-        return $this->withTablePrefix($grammar);
+        return new QueryGrammar($this);
     }
 
     protected function getDefaultPostProcessor()
